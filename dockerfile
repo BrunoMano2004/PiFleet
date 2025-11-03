@@ -7,6 +7,7 @@ RUN npm ci --omit=dev
 
 COPY . .
 
+RUN npm install -g @nestjs/cli
 RUN npm run build
 
 ENV PORT=3000
